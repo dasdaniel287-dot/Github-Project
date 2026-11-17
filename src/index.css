@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: var(--font-sans);
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle workspace dot grid background */
+.workspace-grid-light {
+  background-color: #eef0f4;
+  background-image: radial-gradient(rgba(15, 23, 42, 0.11) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.workspace-grid-dark {
+  background-color: #0b0d12;
+  background-image: radial-gradient(rgba(226, 232, 240, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Custom thin scrollbars for floating drawers */
+.thin-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+.thin-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.45);
+}

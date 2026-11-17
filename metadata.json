@@ -1,0 +1,6 @@
+{
+  "name": "CanvasFlow AI",
+  "description": "An AI-first, minimalist spatial graphic design studio with smart alignment guides, one-click Brand Kit palette switching, and instant PNG, PDF, SVG, and Tailwind CSS code export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
